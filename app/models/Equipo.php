@@ -22,9 +22,11 @@ class Equipo {
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 	
-	public function getCaptain($equipo_id) {
-    $stmt = $this->db->prepare("SELECT * FROM jugadores WHERE equipo_id = :equipo_id AND capitan = 1 LIMIT 1");
-    $stmt->execute(['equipo_id' => $equipo_id]);
-    return $stmt->fetch(PDO::FETCH_ASSOC);
-}
+	public function getCapitan($equipo_id) {
+		$stmt = $this->db->prepare("SELECT * FROM jugadores WHERE equipo_id = :equipo_id AND capitan = 1 LIMIT 1");
+		$stmt->execute(['equipo_id' => $equipo_id]);
+		return $stmt->fetch(PDO::FETCH_ASSOC);
+	}
+	
+	
 }

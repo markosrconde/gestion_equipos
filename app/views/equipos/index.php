@@ -4,6 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
+	<link rel="stylesheet" href="/gestion_equipos/public/assets/css/styles.css">
     <title>Listado de Equipos</title>
 	<script type="text/javascript" charset="utf-8">
 		$(document).ready(function() {
@@ -16,59 +17,6 @@
 		})
 
 	</script>
-	<style>
-	.title {
-		text-align: center
-	}
-	.container {
-		position: relative;
-		max-width: 800px;
-		margin: auto;
-	}
-	.add-button {
-        float: right;
-		margin-bottom: 20px;
-		padding: 10px 20px;
-		background-color: #28a745;
-		color: white;
-		border: none;
-		border-radius: 5px;
-		font-size: 14px;
-		cursor: pointer;
-        }
-	.add-button:hover {
-        background-color: #218838;
-    }
-	table {
-		width: 100%;
-		border-collapse: collapse;
-		margin-top: 20px;
-	}
-	th {
-		background-color: #007bff;
-		color: white;
-		padding: 12px;
-		font-size: 16px;
-		font-weight: bold;
-		text-align: center;
-	}
-	td {
-		background: #f9f9f9;
-		padding: 12px;
-		font-size: 15px;
-		border: 1px solid #ddd;
-		text-align: center;
-		vertical-align: middle;
-	}
-	tbody {
-		cursor: pointer;
-		
-	}
-	tr:hover {
-		background-color: #f1f1f1;
-	}
-
-</style>
 </head>
 <body>
 	<div class="title"><h2>Gestor de Equipos</h2></div>
